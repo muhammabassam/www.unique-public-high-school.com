@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index.html</title>
+    <style>
+        body {
+            background-color: orange;
+            color: black;
+            background-image: url('images/abc.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .center {
+            text-align: center;
+            color: blue;
+        }
+        .blinking-image img {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        function viewResult() {
+            var rollNumber = document.getElementById("roll").value;
+            var classSelected = document.getElementById("class").value;
+            var imageUrl = "file:///C:/Users/YourUsername/Desktop/images/a.png"; // Change this path to the actual path of a.png on your desktop
+            var newTab = window.open(imageUrl, '_blank');
+            newTab.focus();
+        }
+    </script>
+</head>
+<body>
+<div class="center">
+    <b><h1><u>"UNIQUE PUBLIC HIGH SCHOOL & ACADEMY"</u></h1></b>
+    <hr>
+    <h3><u><i><b>"Affiliated with Bise Lahore"</b></i></u></h3>
+</div>
+<marquee>
+    <h2>ADMISSIONS OPEN=======ADMISSIONS OPEN=======ADMISSIONS OPEN=======ADMISSIONS OPEN</h2>
+</marquee>
+<fieldset>
+    <b><u>MESSAGE FROM THE PRINCIPAL:</u></b><br>
+    <a href="images/123.png">
+        <img src="images/123.png" alt="Principal's Message">
+    </a>
+    <pre><b>Dear Esteemed Students, Parents, and Teachers,</b></pre>
+    <pre><b>I am highly delighted to extend my heartfelt welcome to you all. 
+        At the UPHS Lahore, we are committed to ensuring the highest standards in education. 
+        Our unwavering dedication to the seamless conduct of Elementary and Secondary School Examinations
+        guarantees not only timely but also transparent results. Understanding the importance of swift academic services,
+        we have implemented a rapid student support system. Furthermore, our state-of-the-art automated online fast-tracking system is 
+        designed to enhance efficiency, ensuring a smooth academic journey for every student. Together, let us forge a path of excellence 
+        in education. Transparent evaluation is our priority.</b></pre>
+    <pre><br>Warm regards,<br>MUHAMMAD MUZAMMIL:<br>Principal</pre>
+</fieldset>
+<hr>
+<div class="center">
+    <h3><u><i><b>"Serving since 1993"</b></i></u></h3>
+</div>
+<hr>
+<fieldset>
+    <u><b><h1>Under:</h1></b></u>
+    <ul>
+        <li>Under high qualified staff</li>
+        <li>24 hours monitoring through camera</li>
+        <li>Ups & solar facility also available</li>
+        <li>Games and other activities</li>
+        <li>Monthly tests & parents teachers meetings</li>
+    </ul>
+</fieldset>
+<hr>
+<fieldset>
+    <pre><u><b><h1>Now active systems:</h1></b></u></pre>
+    <div class="center blinking-image">
+        <a href="forms/Admission form for school.png">
+            <img src="images/a.png" alt="Active System A">
+        </a>
+    </div>
+    <div class="center blinking-image">
+        <a href="forms/156.png">
+            <img src="images/b.png" alt="Active System B">
+        </a>
+    </div>
+</fieldset>
+<fieldset>
+    <div class="center">
+        <h2>Check Online Result</h2>
+        <form>
+            <label for="class">Select Class:</label>
+            <select name="class" id="class">
+                <option value="Nursery">Nursery</option>
+                <option value="Prep 1">Prep 1</option>
+                <option value="Prep 2">Prep 2</option>
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+                <option value="Class 4">Class 4</option>
+                <option value="Class 5">Class 5</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+            </select><br><br>
+            <label for="term">Select Term:</label>
+            <select name="term" id="term">
+                <option value="1">1st Term</option>
+                <!-- Add more options for other terms if needed -->
+            </select><br><br>
+            <label for="roll">Enter Roll Number:</label>
+            <input type="text" id="roll" name="roll" pattern="[1-9][0-9]?|30"><br><br>
+            <input type="button" value="View Result" onclick="viewResult()">
+        </form>
+    </div>
+</fieldset>
+</body>
+</html>
